@@ -1,38 +1,230 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ /* This file has all css class needed in diff components */
+ .navbar {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 2px 5px gray;
+  background: paleturquoise;
+}
+.title {
+  width: 50%;
+  padding-left: 10%;
+}
+.statistics {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 50%;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  /* background-image: url("back.jpg"); */
+  background-color: cornflowerblue;
+  height: 90vh;
+}
+
+.board {
+  height: 65%;
+  width: 35%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+  box-shadow: 6px 6px 10px gray;
 }
 
-.App-link {
-  color: #61dafb;
+.tile {
+  width: 20%;
+  height: 20%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* font-size: 10pt; */
+  font-size: 0.85vw;
+  font-weight: bold;
+  color:crimson;
+  word-wrap: break-word;
+  padding: 1px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#tile0 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 10px solid black;
+  border-top: 10px solid black;
+}
+
+#tile1 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 10px solid black;
+}
+#tile2 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 10px solid black;
+}
+#tile3 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 10px solid black;
+}
+#tile4 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 10px solid black;
+  border-right: 10px solid black;
+}
+#tile5 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 10px solid black;
+}
+#tile6 {
+  border: 2px solid black;
+}
+#tile7 {
+  border: 2px solid black;
+}
+#tile8 {
+  border: 2px solid black;
+}
+#tile9 {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 10px solid black;
+}
+#tile10 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 10px solid black;
+}
+#tile11 {
+  border: 2px solid black;
+}
+#tile12 {
+  border: 2px solid black;
+  /* font-size: 30pt; */
+  font-size: 3vw;
+}
+#tile13 {
+  border: 2px solid black;
+}
+#tile14 {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 10px solid black;
+}
+#tile15 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 10px solid black;
+}
+#tile16 {
+  border: 2px solid black;
+}
+#tile17 {
+  border: 2px solid black;
+}
+#tile18 {
+  border: 2px solid black;
+}
+#tile19 {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 10px solid black;
+}
+#tile20 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 10px solid black;
+  border-bottom: 10px solid black;
+}
+#tile21 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 10px solid black;
+}
+#tile22 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 10px solid black;
+}
+#tile23 {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 10px solid black;
+}
+#tile24 {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 10px solid black;
+  border-right: 10px solid black;
+}
+
+.game p {
+  font-size: 2em;
+  font-weight: bold;
+  background: paleturquoise;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: paleturquoise;
+  width: 300px;
+  box-shadow: 6px 6px 5px gray;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+}
+@media only screen and (max-width: 400px) {
+  .title {
+    display: flex;
+    font-size: 0.2em !important;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+  .title h1 {
+    font-size: large;
+  }
+  .statistics {
+    display: flex;
+  }
+  .statistics h2 {
+    font-size: medium;
   }
 }
